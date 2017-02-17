@@ -30,8 +30,14 @@ test('it creates a new message item element', (assert) => {
   assert.equal(fixWhitespace(resultTwo.innerText), 'Josh Time for standups',
       'createMessageItem should fill in the required data for messageTwo');
 
-  const nameOne = fixWhitespace(resultOne.querySelector('.message-item__username').innerText);
-  const nameTwo = fixWhitespace(resultTwo.querySelector('.message-item__username').innerText);
+  const usernameElOne = resultOne.querySelector('.message-item__username');
+  const usernameElTwo = resultTwo.querySelector('.message-item__username');
+
+  assert.ok(usernameElOne,
+    'The li created by createMessageItem should contain a span with the class "message-item__username"');
+
+  const nameOne = fixWhitespace(usernameElOne.innerText);
+  const nameTwo = fixWhitespace(usernameElTwo.innerText);
 
   assert.equal(nameOne, 'Ryan',
     'createMessageItem should create a ".message-item__username" span filled with the username for messageOne');
