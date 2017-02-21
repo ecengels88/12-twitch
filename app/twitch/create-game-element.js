@@ -10,8 +10,8 @@ export default function createGameItem(itemOne) {
 
   gridItem.querySelector('.game-item__name').innerText = itemOne.name;
   gridItem.querySelector('.game-item__popularity').innerText = itemOne.popularity + ' Viewers';
-  gridItem.querySelector('.game-item__pic').alt = itemOne.name;
   gridItem.querySelector('.game-item__pic').src = itemOne.box.large;
+  gridItem.querySelector('.game-item__pic').alt = itemOne.name;
 
   return gridItem;
-};
+}
