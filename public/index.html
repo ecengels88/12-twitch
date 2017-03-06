@@ -7,13 +7,137 @@
 </head>
 <body>
 
-  <div class="container">
-    <div class="wrapper">
-
-
-
+<div class="app">
+  <nav class="sidebar">
+    <div class="sidebar__logo">
+      <img src="https://files.slack.com/files-pri/T0MD5BPU5-F4DCPNJ8K/twitch_logo.png" alt="" class="twitch-logo">
     </div>
-  </div>
+    <div class="sidebar__search">
+      <span class="fa fa-search" aria-hidden="true"></span>
+      <input type="text" class="sidebar__search--bar" placeholder="Search">
+    </div>
+    <div class="sidebar__nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <span class="fa fa-gamepad" aria-hidden="true"></span>
+          <span class="nav-list__item--page">Games</span>
+        </li>
+        <li class="nav-list__item">
+          <span class="fa fa-users" aria-hidden="true"></span>
+          <span class="nav-list__item--page">Communities</span>
+        </li>
+        <li class="nav-list__item">
+          <span class="fa fa-video-camera" aria-hidden="true"></span>
+          <span class="nav-list__item--page">Channels</span>
+        </li>
+        <li class="nav-list__item">
+          <span class="fa fa-youtube-play" aria-hidden="true"></span>
+          <span class="nav-list__item--page">Videos</span>
+        </li>
+        <li class="nav-list__item">
+          <span class="fa fa-cubes" aria-hidden="true"></span>
+          <span class="nav-list__item--page">Creative</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar__submenu">
+      <div class="menu-title">
+        <p class="menu-title__text">Free With Prime</p>
+        <span class="fa fa-chevron-down" aria-hidden="true"></span>
+      </div>
+      <div class="menu-items">
+        <ul class="menu-items__list">
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/gun.png" alt="gun" class="items-pic__image">
+            </div>
+            <p class="items-text">Ghost Recon Wildlands War</p>
+            <p class="items-text__light">Tom Clancy's Ghost Recon</p>
+          </li>
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/beard.png" alt="beard" class="items-pic__image">
+            </div>
+            <p class="items-text">The Banner Saga 2</p>
+            <p class="items-text__light">The Banner Saga 2 (WIN)</p>
+          </li>
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/helmet.png" alt="helmet" class="items-pic__image">
+            </div>
+            <p class="items-text">For Honor Twitch Prime Bundle</p>
+            <p class="items-text__light">For Honor</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar__submenu">
+      <div class="menu-title">
+        <p class="menu-title__text">Recommended Channels</p>
+      </div>
+      <div class="menu-items">
+        <ul class="menu-items__list">
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/first.png" alt="black cat" class="items-pic__image">
+            </div>
+            <p class="items-text">LIRIK</p>
+            <p class="items-text__light">streaming Tom Clancy's Stuff</p>
+          </li>
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/second.png" alt="mustache toast" class="items-pic__image">
+            </div>
+            <p class="items-text">DisguesedToastHS</p>
+            <p class="items-text__light">streaming Hearthstone</p>
+          </li>
+          <li class="menu-items__list--items">
+            <div class="items-pic">
+              <img src="./images/third.png" alt="smashed face" class="items-pic__image">
+            </div>
+            <p class="items-text">BAFTA</p>
+            <p class="items-text__light">streaming Talk Shows</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar__submenu">
+      <div class="menu-title">
+        <p class="menu-title__text">More At Twitch</p>
+      </div>
+      <div class="left-menu">
+        <ul class="left_menu__items">
+          <li class="items-text__light more-info">About</li>
+          <li class="items-text__light more-info">Blog</li>
+          <li class="items-text__light more-info">Cookie Policy</li>
+          <li class="items-text__light more-info">Help</li>
+          <li class="items-text__light more-info">Language</li>
+          <li class="items-text__light more-info">Partners</li>
+          <li class="items-text__light more-info">Store</li>
+        </ul>
+      </div>
+      <div class="right-menu">
+        <ul class="right_menu__items">
+          <li class="items-text__light more-info">Advertisers</li>
+          <li class="items-text__light more-info">Creative</li>
+          <li class="items-text__light more-info">Developers</li>
+          <li class="items-text__light more-info">Jobs</li>
+          <li class="items-text__light more-info">Music</li>
+          <li class="items-text__light more-info">Press</li>
+          <li class="items-text__light more-info">Terms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="button-bar">
+      <button class="btn-left">Log In</button>
+      <button class="btn-right">Sign Up</button>
+    </div>
+  </nav>
+</div>
 
   <script src="/app.js" charset="utf-8"></script>
 </body>
