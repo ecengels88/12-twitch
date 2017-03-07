@@ -6,6 +6,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $m-gutter: 1rem;
 $c-sidebar: #17141f;
 $c-sidetext: #fefefe;
+$c-search: #201c2b;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -23,12 +24,12 @@ $c-sidetext: #fefefe;
   overflow: scroll;
 
   &__logo {
-
+    width: 6.1rem;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
   }
-}
 
-.twitch-logo {
-  height: 2rem;
-
-  margin: 0 auto;
+  &__search {
+    background: $c-search;
+  }
 }
