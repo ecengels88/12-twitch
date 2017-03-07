@@ -7,6 +7,8 @@ $m-gutter: 1rem;
 $c-sidebar: #17141f;
 $c-sidetext: #fefefe;
 $c-search: #201c2b;
+$c-searchborder: #392e5c;
+$c-light: #898395;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -30,6 +32,21 @@ $c-search: #201c2b;
   }
 
   &__search {
+    border: 1px solid $c-searchborder;
     background: $c-search;
+
+    &--bar {
+      border: 0;
+      outline: none;
+      background: none;
+      color: $c-light;
+      font-size: 0.8rem;
+      line-height: 2rem;
+    }
   }
+}
+
+.search-icon {
+  padding: 0.5rem;
+  color: $c-light;
 }
