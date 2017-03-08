@@ -8,7 +8,9 @@ $c-sidebar: #17141f;
 $c-sidetext: #fefefe;
 $c-search: #201c2b;
 $c-searchborder: #392e5c;
+$c-itemborder: #6441a4;
 $c-light: #898395;
+$c-font: #b8b5c0;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -41,12 +43,38 @@ $c-light: #898395;
       background: none;
       color: $c-light;
       font-size: 0.8rem;
-      line-height: 2rem;
+      line-height: 1.8rem;
     }
+  }
+
+  &__nav {
+    padding: 1.5rem $m-gutter;
   }
 }
 
 .search-icon {
   padding: 0.5rem;
   color: $c-light;
+}
+
+.nav-list {
+  margin: 0;
+  color: $c-font;
+
+  &__item {
+    padding: 0.1rem 0;
+
+    &--page {
+      padding: 0 0.3rem;
+    }
+  }
+}
+
+.nav-list li:first-of-type {
+  border-left: 2px solid $c-itemborder;
+}
+
+.list-icons {
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+
 }
