@@ -20,7 +20,9 @@ img {
 }
 
 .section {
+  flex-grow: 1;
   padding: 1rem;
+  overflow: auto;
 }
 
 .container {
@@ -30,4 +32,12 @@ img {
 
 .grid {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.game-item {
+  flex-basis: calc(100%/4 - 1rem);
+  margin: 0.5rem;
 }
